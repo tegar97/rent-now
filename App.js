@@ -24,7 +24,13 @@ export default function App() {
   if (fontsLoad) {
     return (
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Started">
+        <Stack.Navigator
+          screenOptions={{
+            gestureEnabled: true,
+            gestureDirection: "horizontal",
+          }}
+          initialRouteName="Started"
+        >
           <Stack.Screen
             name="Started"
             component={GetStarted}

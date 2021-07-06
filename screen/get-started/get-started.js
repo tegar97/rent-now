@@ -29,10 +29,7 @@ function GetStarted({ navigation }) {
           Find Your perfect & sweet home with just a few click
         </Text>
 
-        <TouchableWithoutFeedback
-          underlayColor="white"
-          onPress={() => navigation.navigate("Login")}
-        >
+        <TouchableWithoutFeedback onPress={() => navigation.navigate("Login")}>
           <View style={MainButton}>
             <Text style={ButtonText}>Explore</Text>
           </View>
